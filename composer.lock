@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "479407875c975e7dbee0aefcb85e62d5",
-    "content-hash": "5c27dd23827e5c153817a7f3f5d227c6",
+    "hash": "7be52cb71fcc14a41777d282006c8e7b",
+    "content-hash": "b2d8e9aee90452cf8a9b17eb03878c9a",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -635,6 +635,51 @@
             }
         },
         {
+            "name": "brussens/yii2-maintenance-mode",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brussens/yii2-maintenance-mode.git",
+                "reference": "18d99818878d776cbb21f705a78d2889426e6ecf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brussens/yii2-maintenance-mode/zipball/18d99818878d776cbb21f705a78d2889426e6ecf",
+                "reference": "18d99818878d776cbb21f705a78d2889426e6ecf",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "brussens\\maintenance\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brusenskiy Dmitry",
+                    "email": "brussens@nativeweb.ru"
+                },
+                {
+                    "name": "Poltoratsky Alexander"
+                }
+            ],
+            "description": "Maintenance mode component for Yii framework 2.x.x version.",
+            "keywords": [
+                "maintenance",
+                "mode",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2015-11-13 07:27:02"
+        },
+        {
             "name": "fzaninotto/faker",
             "version": "v1.5.0",
             "source": {
@@ -685,6 +730,52 @@
                 "fixtures"
             ],
             "time": "2015-05-29 06:29:14"
+        },
+        {
+            "name": "insolita/yii2-migration-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Insolita/yii2-migrik.git",
+                "reference": "bbc19ccf949a4a4e9fe49719ba89480f0c2de732"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Insolita/yii2-migrik/zipball/bbc19ccf949a4a4e9fe49719ba89480f0c2de732",
+                "reference": "bbc19ccf949a4a4e9fe49719ba89480f0c2de732",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "yiisoft/yii2-gii": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "insolita\\migrik\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "insolita\\migrik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "insolita",
+                    "email": "donnainsolita@gmail.com"
+                }
+            ],
+            "description": "gii tool for mass migration generation by Schema ",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-05-07 14:19:56"
         },
         {
             "name": "phpspec/php-diff",
@@ -915,7 +1006,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "insolita/yii2-migration-generator": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -20,6 +20,7 @@
         "yiisoft/yii2-swiftmailer": "*"
     },
     "require-dev": {
+        "insolita/yii2-migration-generator": "dev-master",
         "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
