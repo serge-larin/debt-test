@@ -21,6 +21,8 @@
     },
     "require-dev": {
         "insolita/yii2-migration-generator": "dev-master",
+        "yiisoft/yii2-coding-standards": "*",
+        "squizlabs/php_codesniffer": "2.*",
         "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
