@@ -43,4 +43,9 @@ return [
             'appendTimestamp' => true,
         ],
     ],
+    'modules' => [
+        'api' => [
+            'class' => 'app\modules\api\Module',
+        ],
+    ],
 ];
