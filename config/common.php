@@ -24,6 +24,18 @@ return [
             ],
             'keyPrefix' => 'my-app',
         ],
+        'formatter' => [
+            'dateFormat' => 'dd.MM.Y',
+            'datetimeFormat' => 'dd.MM.Y HH:mm:ss',
+            'decimalSeparator' => ',',
+            'thousandSeparator' => ' ',
+            'currencyCode' => 'RUB',
+            'numberFormatterOptions' => [
+                NumberFormatter::MIN_FRACTION_DIGITS => 2,
+                NumberFormatter::MAX_FRACTION_DIGITS => 2,
+            ],
+            'nullDisplay' => '',
+        ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             // send all mails to a file by default. You have to set
