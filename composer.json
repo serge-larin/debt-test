@@ -17,6 +17,7 @@
         "php": ">=5.4.0",
         "2amigos/yii2-type-ahead-widget" : "1.0.*",
         "kartik-v/yii2-widget-datetimepicker": "*",
+        "kartik-v/yii2-grid": "@dev",
         "yiisoft/yii2": ">=2.0.5",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*"
