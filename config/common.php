@@ -47,5 +47,8 @@ return [
         'api' => [
             'class' => 'app\modules\api\Module',
         ],
+        'debt' => [
+            'class' => 'app\modules\debt\Module',
+        ],
     ],
 ];
