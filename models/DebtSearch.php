@@ -42,11 +42,19 @@ class DebtSearch extends Debt
      */
     public function search($params)
     {
-        $query = Debt::find();
+        $query = Debt::find()->joinWith('debtPerson');
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort' => [
+                'defaultOrder' => [ 'debt_person' => SORT_ASC ],
+            ],
         ]);
+        $dataProvider->sort->attributes['debt_person'] = [
+            'asc' => ['person.person_last_name' => SORT_ASC],
+            'desc' => ['person.person_last_name' => SORT_DESC],
+        ];
+
 
         $this->load($params);
 
