@@ -47,7 +47,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'api/debt', 'pluralize' => false],
                 '' => '/site/index',
                 '<_a:error>' => 'site/<_a>',
             ],
