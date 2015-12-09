@@ -51,5 +51,8 @@ return [
         'debt' => [
             'class' => 'app\modules\debt\Module',
         ],
+        'gridview' =>  [
+            'class' => '\kartik\grid\Module',
+        ],
     ],
 ];
