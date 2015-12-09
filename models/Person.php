@@ -50,4 +50,12 @@ class Person extends \yii\db\ActiveRecord
     {
         return implode(' ', [$this->person_last_name, $this->person_first_name, $this->person_second_name]);
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getDebts()
+    {
+        return $this->hasMany(Debt::className(), ['debt_person' => 'person_id']);
+    }
 }
